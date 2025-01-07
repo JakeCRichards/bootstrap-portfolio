@@ -9,13 +9,13 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="index.html">Jake Richards</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
@@ -26,19 +26,145 @@
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
-    <section>
+      <!-- header -->
+<header id="hero" class="container">
+  <!-- section with hero image -->
+  <section class="row">
+      <!-- text-center class used to centre all text inside column -->
+      <div class="col-12 text-center">
+          <h1 class="display-4 my-4">Jake Richards</h1>
+          <!-- mb-5 gives extra margin spacing under subheading -->
+          <h2 class="display-6 mb-5">Junior Software Developer</h2>
+          <p>
+              Hello! I'm Jake, a
+              <strong>passionate and creative Software Developer</strong>
+              dedicated to building engaging, user-friendly websites and
+              applications. With a keen eye for design and a love for coding,
+              <strong>I translate complex ideas into smooth, accessible digital
+                  experiences.</strong>
+              Eager to collaborate and grow, I'm on the lookout for opportunities
+              to innovate and excel.
+          </p>
+          <!-- mb-5 gives extra margin spacing under lead text -->
+          <p class="lead mb-5">Let's create something amazing together!</p>
+      </div>
+  </section>
+  
+  
+</header>
 
-    </section>
+<!-- main content -->
+<main>
+  <!-- About section links to #about href in navbar -->
+  <section id="about" class="container">
+      <div class="row">
+          <!-- my-4 used to add top and bottom margin to heading -->
+          <div class="col-12 text-center my-4">
+              <h2 class="display-5">About Jake</h2>
+          </div>
+          <!-- mb-4 used to add margin under image -->
+          <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
+              <!-- img-fluid class makes the image responsive to its container -->
+              <img src="assets/images/jake-richards.webp" class="img-fluid rounded-5 " alt="Jake Richards" style="max-height: 20rem;">
+          </div>
+          <!-- mb-4 used to add margin under text -->
+          <div class="col-12 col-md-6 mb-4">
+              <p>
+                  As a dedicated software developer, I specialise in crafting
+                  seamless, dynamic user interfaces that prioritize user engagement
+                  and functionality. With a keen interest in web aesthetics and
+                  usability, I've developed a robust skill set in HTML, CSS,
+                  JavaScript, and Bootstrap, ensuring responsive and visually
+                  appealing designs.
+              </p>
+              <p>
+                  My approach combines meticulous attention to detail with a
+                  relentless pursuit of user-centric solutions, making me a reliable
+                  contributor to any web development team.
+              </p>
+              <p>
+                  I am on the lookout for opportunities to leverage my skills in a
+                  dynamic environment, aiming to contribute to meaningful projects
+                  and grow as part of a forward-thinking team.
+              </p>
+          </div>
+      </div>
+  </section>
+  <!-- portfolio section starts here -->
+<!-- portfolio section starts here -->
+<section id="portfolio" class="container pb-4">
+    <div class="row">
+        <!-- my-4 used to add top and bottom margin to heading -->
+        <div class="col-12 text-center my-4">
+            <h2 class="display-5">Portfolio</h2>
+        </div>
+        <!-- cols for cards -->
+        <div class="col-12 col-md-6">
+            <div class="card mb-3">
+                <img src="assets/images/love-running.webp" class="card-img-top"
+                    alt="A woman running" >
+                <div class="card-body">
+                    <h3 class="card-title">Love Running</h3>
+                    <p class="card-text">A platform for a running group dedicated to improving both mental and physical fitness.</p>
+                    <p> This was my first CodeInstitute project</p>
+                    <a href="https://jakecrichards.github.io/love-running" class="btn btn-outline-secondary" target="_blank">Visit site</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="card mb-3">
+                <img src="assets/images/we-wellness.webp" class="card-img-top"
+                    alt="A spa with candles towels and natural material">
+                <div class="card-body">
+                    <h3 class="card-title">Placeholder 1</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis voluptates quod blanditiis minus quas optio. Vel, ad tempora unde in rem aspernatur qui deserunt earum distinctio ipsa assumenda, quibusdam officia?</p>
+                    <a href="#" class="btn btn-outline-secondary">Visit site</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="card mb-3">
+                <img src="assets/images/math-wiz.webp" class="card-img-top"
+                    alt="A child practicing math at a computer">
+                <div class="card-body">
+                    <h3 class="card-title">Placeholder 2</h3>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolore praesentium vitae culpa minus, laudantium dignissimos quasi necessitatibus dicta iusto illo aspernatur architecto totam eum, neque, enim suscipit? Soluta, molestiae!</p>
+                    <a href="#" class="btn btn-outline-secondary">Visit site</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="card mb-3">
+                <img src="assets/images/bmi-calculator.webp" class="card-img-top"
+                    alt="Weighing scales seen from the first person view of the person standing on the scales">
+                <div class="card-body">
+                    <h3 class="card-title">Placeholder 3</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corporis beatae inventore, doloremque perferendis quod, dolore aliquam culpa molestias facilis similique, itaque harum eum illum rerum voluptate nam quia vero?</p>
+                    <a href="#" class="btn btn-outline-secondary">Visit site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Contact section -->
+ <footer id="contact" class="container">
+    <div class="row">
+        <div class="col-12 text-center my-4">
+            <h2 class="display-5">Contact</h2>
+            <p class="mt-4">
+                Got questions or ideas? I'd love to hear from you! Whether you're interested in collaboration, have inquiries about my projects, or wish to request a copy of my CV, please don't hesitate to get in touch. I'm always open to discussing new opportunities and how we can work together to create something amazing!
+            </p>
+        </div>
+        <div class="col-12 col-md-10 col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minima corporis voluptate facere quibusdam, recusandae alias dolorem tempore molestiae, assumenda fugit a perspiciatis saepe. Inventore distinctio quas nobis rem tempore.</div>
+    </div>
+ </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
