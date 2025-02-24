@@ -64,6 +64,10 @@ h1, h2 {
     background-color: #dbdcde;
 }
 
+.row {
+    margin: 0;
+}
+
 /* Buttons */
 
 .custom-button {
@@ -78,6 +82,11 @@ h1, h2 {
 
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 32rem;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0;
+    border: black 2px solid;
 }
 
 .card:hover {
@@ -85,17 +94,51 @@ h1, h2 {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+
+
+/* Badges */
+.html-badge {
+    background-color: #f16529;
+    color: white;
+}
+
+.CSS-badge {
+    background-color: #264de4;
+    color: white;
+}
+
+.git-badge {
+    background-color: red;
+    color: white;
+}
+
+.js-badge {
+    background-color: #f0db4f;
+    color: black;
+}
+
+.react-badge {
+    background-color: #61dbfb;
+    color: black;
+}
+
+.GitHub-badge {
+    background-color: #000000;
+    color: white;
+}
+
+.bootstrap-badge {
+    background-color: #453261;
+    color: white;
 }
 
 /* Media queries */
 
+
 /* Use Bootstrap breakpoint for XL screens */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     /* Fixes all portfolio cards being too tall on xl screens */
-    #portfolio .card-text {
+    /* #portfolio .card-text {
         min-height: auto;
     }    
-}
+} */ 

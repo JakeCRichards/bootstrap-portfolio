@@ -13,7 +13,7 @@
 </head>
 
 <body class="min-vh-100">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="index.html">Jake Richards</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,11 +35,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- header -->
-    <header id="hero" class="container">
+    <header id="hero" class="container" role="banner">
         <!-- section with hero image -->
         <section class="row">
             <!-- text-center class used to centre all text inside column -->
@@ -73,11 +74,11 @@
     <!-- main content -->
     <main>
         <!-- About section links to #about href in navbar -->
-        <section id="about" class="container">
+        <section id="about" class="container" role="region" aria-labelledby="about-heading">
             <div class="row">
                 <!-- my-4 used to add top and bottom margin to heading -->
                 <div class="col-12 text-center my-4">
-                    <h2 class="display-5">About Jake</h2>
+                    <h2 id="about-heading" class="display-5">About Jake</h2>
                 </div>
                 <!-- mb-4 used to add margin under image -->
                 <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
@@ -109,70 +110,121 @@
             </div>
         </section>
         <!-- portfolio section starts here -->
-                <section>
-            <div class="container py-5">
-                <h1 class="text-center mb-5">My projects</h1>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="assets/images/love-running.webp" class="card-img-top" alt="A woman running">
-                      <div class="card-body">
+        <section id="portfolio" class="container py-5 my-5" role="region" aria-labelledby="portfolio-heading">
+            <div class="row">
+                <div class="col-12 text-center my-4 lead">
+                    <h2 id="portfolio-heading" class="display-5">Portfolio</h2>
+                    <p class="mt-4">
+                        Here are some of the projects I've worked on. Each project showcases my skills in web
+                        development and design, highlighting my ability to create responsive, engaging, user-friendly websites and applications. I have detailed underneath the technologies used in each project.
+                    </p>
+                    <p>Click on the <span class="btn btn-outline-secondary disabled">View Site</span> buttons to view the live projects. </p>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+
+                <div class="card col-md-5 shadow-sm text-center">
+                    <div class="card-header p-0" style="height: 200px;">
+                        <img src="assets/images/love-running.webp" alt="A woman running"
+                            class="w-100 h-100 object-fit-cover portfolioItemImg">
+                    </div>
+                    <div class="card-body">
                         <h5 class="card-title">Love Running</h5>
                         <p class="card-text">A platform for a running group dedicated to improving both mental and
                             physical fitness. This was my first CodeInstitute project utilising HTML and CSS through
                             guided work, with opportunities to add my own flair.</p>
-                            <a href="https://jakecrichards.github.io/love-running" class="btn btn-outline-secondary"
+                        <a href="https://jakecrichards.github.io/love-running" class="btn btn-outline-secondary"
                             target="_blank">Visit site</a>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="assets/images/boardwalk-games.jpg" class="card-img-top" alt="A stack of board games">
-                      <div class="card-body">
+                    <div class="card-footer portfolioItemFooter">
+                        <div class="technologies text-center">
+                            <span class="badge html-badge">HTML5</span>
+                            <span class="badge git-badge">git</span>
+                            <span class="badge GitHub-badge">GitHub</span>
+                            <span class="badge CSS-badge">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-5 shadow-sm text-center">
+                    <div class="card-header p-0" style="height: 200px;">
+                        <img src="assets/images/boardwalk-games.jpg" alt="A stack of board games"
+                            class="w-100 h-100 object-fit-cover portfolioItemImg">
+                    </div>
+                    <div class="card-body">
                         <h5 class="card-title">Boardwalk Games</h5>
                         <p class="card-text">A website for a fictional board game cafe where you can book events,
                             reserve games to play and read through information on a responsive website. This was my
                             second CodeInstitute project, using HTML, CSS and Bootstrap framework.</p>
-                            <a href="https://jakecrichards.github.io/boardwalk-games/" class="btn btn-outline-secondary">Visit site</a>
-                      </div>
+                        <a href="https://jakecrichards.github.io/boardwalk-games/" class="btn btn-outline-secondary"
+                            target="_blank">Visit site</a>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="assets/images/EDI-Hub.png" class="card-img-top" alt="Placeholder 3">
-                      <div class="card-body">
+                    <div class="card-footer portfolioItemFooter">
+                        <div class="technologies text-center">
+                            <span class="badge html-badge">HTML5</span>
+                            <span class="badge git-badge">git</span>
+                            <span class="badge GitHub-badge">GitHub</span>
+                            <span class="badge CSS-badge">CSS</span>
+                            <span class="badge bootstrap-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-5 shadow-sm text-center">
+                    <div class="card-header p-0" style="height: 200px;">
+                        <img src="assets/images/EDI-Hub.png" alt="A selection of screens showing the EDI Hub website"
+                            class="w-100 h-100 object-fit-cover portfolioItemImg">
+                    </div>
+                    <div class="card-body">
                         <h5 class="card-title">EDI Vocab Hub</h5>
-                        <p class="card-text">This was my first solo project utilising bootstrap to create a website of my own. 
-                            After wireframing the project, I produced the website aimed at staff and students as an introduction 
-                            to equality, diversity and inclusion.</p>
+                        <p class="card-text">This was my first solo project utilising bootstrap to create a website of
+                            my own. After wireframing the project, I produced the website aimed at staff and students as
+                            an introduction to equality, diversity and inclusion.</p>
                         <a href="https://jakecrichards.github.io/Vocabulary-of-EDI/" class="btn btn-outline-secondary"
                             target="_blank">Visit site</a>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="assets/images/Love-Maths.png" class="card-img-top" alt="Placeholder 3">
-                      <div class="card-body">
+                    <div class="card-footer portfolioItemFooter">
+                        <div class="technologies text-center">
+                            <span class="badge html-badge">HTML5</span>
+                            <span class="badge git-badge">git</span>
+                            <span class="badge GitHub-badge">GitHub</span>
+                            <span class="badge CSS-badge">CSS</span>
+                            <span class="badge bootstrap-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-5 shadow-sm text-center">
+                    <div class="card-header p-0" style="height: 200px;">
+                        <img src="assets/images/Love-Maths.png" alt="Four mathematical functions"
+                            class="w-100 h-100 object-fit-cover portfolioItemImg">
+                    </div>
+                    <div class="card-body">
                         <h5 class="card-title">Love Maths</h5>
-                        <p class="card-text">A website built using JavaScript to generate simple maths problems (addition, 
-                            multiplication, substraction and division), as well as check answers are correct using JS functions.</p>
+                        <p class="card-text">A website built using JavaScript to generate simple maths problems
+                            (addition, multiplication, subtraction, and division), as well as check answers are correct
+                            using JS functions.</p>
                         <a href="https://jakecrichards.github.io/Love-Maths/" class="btn btn-outline-secondary"
                             target="_blank">Visit site</a>
-                      </div>
                     </div>
-                  </div>
+                    <div class="card-footer portfolioItemFooter">
+                        <div class="technologies text-center">
+                            <span class="badge html-badge">HTML5</span>
+                            <span class="badge git-badge">git</span>
+                            <span class="badge GitHub-badge">GitHub</span>
+                            <span class="badge CSS-badge">CSS</span>
+                            <span class="badge js-badge">JavaScript</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
+
     </main>
 
     <!-- Contact section -->
-    <footer id="contact" class="container">
+    <footer id="contact" class="container" role="contentinfo" aria-labelledby="contact-heading">
         <div class="row justify-content-center">
             <div class="col-12 text-center my-4">
-                <h2 class="display-5">Contact</h2>
+                <h2 id="contact-heading" class="display-5">Contact</h2>
                 <p class="mt-4">
                     Got questions or ideas? I'd love to hear from you! Whether you're interested in collaboration, have
                     inquiries about my projects, or wish to request a copy of my CV, please don't hesitate to get in
@@ -181,22 +233,22 @@
                 </p>
             </div>
             <div class="col-12 col-md-10 col-lg-8 mb-4 sharp.corners">
-                <form class="row g-3">
+                <form class="row g-3" aria-label="Contact form">
                     <div class="col-lg-4">
                         <label for="full-name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="full-name">
+                        <input type="text" class="form-control" id="full-name" aria-required="true">
                     </div>
                     <div class="col-lg-4">
                         <label for="phonenumber" class="form-label">Phone number</label>
-                        <input type="number" class="form-control" id="phonenumber">
+                        <input type="number" class="form-control" id="phonenumber" aria-required="true">
                     </div>
                     <div class="col-lg-4">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" aria-required="true">
                     </div>
                     <div class="col-12">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        <textarea class="form-control" id="message" rows="3" aria-required="true"></textarea>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary custom-button">Send</button>
@@ -221,14 +273,14 @@
                     <p>
                         Get a copy of my CV sent directly to your email address for you to look at.
                     </p>
-                    <form class="row g-3 sharp.corners">
+                    <form class="row g-3 sharp.corners" aria-label="Subscribe form">
                         <div class="col-lg-6">
                             <label for="inputName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputName">
+                            <input type="text" class="form-control" id="inputName" aria-required="true">
                         </div>
                         <div class="col-lg-6">
                             <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail">
+                            <input type="email" class="form-control" id="inputEmail" aria-required="true">
                         </div>
                         <div class="col-12 mb-4">
                             <button type="submit" class="btn btn-primary custom-button">
@@ -244,7 +296,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
