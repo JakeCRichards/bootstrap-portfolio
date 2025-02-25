@@ -90,8 +90,9 @@ h1, h2 {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    scale: 101%;
+    outline: solid 3px #1d6d8a;
+    transition: all 0.3s ease-in-out;
 }
 
 
