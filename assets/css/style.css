@@ -36,7 +36,7 @@ h1, h2 {
     background-color: #dbdcde;
 }
 
-#portfolio .card-title {
+.card-title {
     color: #1f7798;
     font-size: 1.2rem;
 }
@@ -82,7 +82,7 @@ h1, h2 {
 
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
-    min-height: 32rem;
+    min-height: 35rem;
     margin: auto;
     margin-bottom: 10px;
     padding: 0;
@@ -141,10 +141,47 @@ h1, h2 {
 /* Media queries */
 
 
-/* Use Bootstrap breakpoint for XL screens */
-/* @media screen and (min-width: 1200px) {
-    /* Fixes all portfolio cards being too tall on xl screens */
-    /* #portfolio .card-text {
-        min-height: auto;
-    }    
-} */ 
+/* card height media query */
+    /* Makes card heights consistent on screens so all cards are the same height as the biggest card*/
+    @media (min-width: 400px) {
+        .card {
+            height: 35rem;
+        }
+        .card-title {
+            font-size: 1.2rem;
+        }
+        .card-body {
+            font-size: 1.2rem;
+        }
+    }
+
+@media (min-width: 768px) {
+    .card {
+        height: 35rem;
+    }
+    .card-title {
+        font-size: 1.4rem;
+    }
+    .card-body {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card {
+        height: 35rem;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-body {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        height: 32rem;
+    }
+    
+}
