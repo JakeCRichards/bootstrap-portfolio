@@ -132,6 +132,11 @@ h1, h2 {
     color: white;
 }
 
+.other-badge {
+    background-color: #dbdcde;
+    color: black;
+}
+
 /* Media queries */
 
 
