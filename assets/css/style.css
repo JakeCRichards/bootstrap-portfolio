@@ -138,6 +138,16 @@ h1, h2 {
     color: black;
 }
 
+.py-badge {
+    background-color: #185d92;
+    color: yellow;
+}
+
+.django-badge {
+    background-color: #064d32;
+    color: white;
+}
+
 /* Media queries */
 
 
